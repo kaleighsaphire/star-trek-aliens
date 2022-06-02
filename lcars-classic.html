@@ -6,10 +6,12 @@
             <meta name="format-detection" content="telephone=no">
             <meta name="format-detection" content="date=no">
             <link rel="stylesheet" type="text/css" href="lcars-tng-legacy.min.css">
+			<link rel="stylesheet" type="text/css" href="normalize.css">
             <link rel="preconnect" href="https://fonts.googleapis.com">
             <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
             <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@400;700&display=swap" rel="stylesheet">
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+			
         </head>
         <body>
             <div class="wrap">
@@ -17,12 +19,12 @@
 		            <a id="scroll-top" href=""><span class="hop">screen</span> top</a>
 	            </div>
 	        <div class="left-frame-top">
-		    <div class="panel-1"><a href="">LCARS</a></div>
+		    <div class="panel-1"><a href="">60-4560</a></div>
 		        <div class="panel-2">02<span class="hop">-262000</span></div>
 	        </div>
 	        <div class="right-frame-top">
 		        <div class="banner">
-			        LCARS &#149; Online
+			        Star Trek
 		        </div>
 				<div class="data-cascade-button-group">
 				<div class="cascade-wrapper">
@@ -31,12 +33,12 @@
 					</div> 
 				</div> <!-- /cascade-wrapper -->
 				<div class="button-col">
-					<div class="button" id="top-left"><a href="">01</a></div>
-					<div class="button" id="bottom-left"><a href="">02</a></div>
+					<div class="button" id="top-left"><a >01</a></div>
+					<div class="button" id="bottom-left"><a >02</a></div>
 				</div>
 				<div class="button-col">
-					<div class="button" id="top-right"><a href="">03</a></div>
-					<div class="button" id="bottom-right"><a href="">04</a></div>
+					<div class="button" id="top-right"><a >03</a></div>
+					<div class="button" id="bottom-right"><a >04</a></div>
 				</div>
 			</div> <!-- /data-cascade-button-group -->
 		<div class="top-corner-bg">
@@ -83,34 +85,51 @@
 
 			<h1>Federation Field Guide to Aliens</h1>
 			
-			<h2>Enter the name of an alien species below</h2>
 
 			<p>On away missions, it is vital to know the basic facts and characteristics about the aliens you will encounter. Enter the species name of your new friend (or foe) to obtain information about them.</p>
-
-			<input type="text">
-			<div class="buttons">
-				<a class="sunflower" id="getButton">Get Info</a>
+			<h5>Enter the plural name of an alien species below:</h5>
+			<div id="getInfo">
+				
+				<input type="text" placeholder="Enter Species Here">
+				<div class="buttons">
+					<a id="getButton">Click For Info</a>
+				</div>
 			</div>
 
 			<div class="pics-right">
-				<img src="" alt='image here' class="border" id="alienImage">
-				<p class="caption" id="alienCaption">Photo</p>
+				<img id="alienImage">
+				<p class="caption" id="alienCaption"></p>
 			  </div>
 
 			<ul class="lcars-list">
-				<li><span>Species name: </span><span id="alienName"></span></li>
-				<li><span>Homeworld: </span><span id="alienWorld"></span></li>
-				<li><span>Distinguishing Features: </span><span id="alienFeatures"></span></li>
-				<li><span>Interesting Fact(s): </span><span id="alienFacts"></span></li>
-				<li><span>Notable Examples: </span><span id="alienExamples"></span></li>
+				<li>
+					<span id="facts">Species name: </span>
+					<span id="alienName"></span>
+				</li>
+				<li>
+					<span id="facts">Homeworld: </span>
+					<span id="alienWorld"></span>
+				</li>
+				<li>
+					<span id="facts">Distinguishing Features: </span>
+					<span id="alienFeatures"></span>
+				</li>
+				<li>
+					<span id="facts">Interesting Facts: </span>
+					<span id="alienFacts"></span>
+				</li>
+				<li>
+					<span id="facts">Notable Examples: </span>
+					<span id="alienExamples"></span>
+				</li>
 			</ul>
 			 <!-- End content area. -->
 
 			<footer>
 				<div class="footer-inside">
 					<div class="footer-text">
-						<p><!-- Your copyright information is only a suggestion. You can also choose to delete this paragraph. But please keep my information as required by the EULA. --> Content Copyright &#169; 2022 Your Name or Website Name or URL</p>
-						<p>LCARS Inspired Website Template designed &amp; developed by Jim Robertus <a href="https://www.thelcars.com">www.TheLCARS.com</a>.</p>
+						<p><!-- Your copyright information is only a suggestion. You can also choose to delete this paragraph. But please keep my information as required by the EULA. --> Content Copyright &#169; 2022 Kaleigh Saphire</p>
+						<small>LCARS Inspired Website Template designed &amp; developed by Jim Robertus <a href="https://www.thelcars.com" target="_blank">www.TheLCARS.com</a>.</small>
 					</div>
 				</div>
 				<div class="footer-panel">
