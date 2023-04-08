@@ -3,7 +3,7 @@ document.querySelector('#getButton').addEventListener('click', apiRequest)
 async function apiRequest () {
     const alienName = document.querySelector('input').value
     try{
-        const response = await fetch(`https://star-trek-alien-api.herokuapp.com/api/${alienName}`)
+        const response = await fetch(`https://vast-red-seagull-wig.cyclic.app//api/${alienName}`)
         const data = await response.json()
         console.log(data)
 
